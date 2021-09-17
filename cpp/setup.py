@@ -6,9 +6,7 @@ setup(
     ext_modules=[
         CUDAExtension(
           name='masking', 
-          sources=[
-            'ampere_mask/ampere_mask.cpp',
-            'ampere_mask/ampere_mask_cuda.cu']
+          sources=['ampere_mask/ampere_mask.cpp','ampere_mask/ampere_mask_cuda.cu']
         )
     ],
     cmdclass={

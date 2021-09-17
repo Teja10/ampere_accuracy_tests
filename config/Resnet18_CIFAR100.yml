@@ -1,4 +1,4 @@
-name: Resnet18_CIFAR10
+name: Resnet18_CIFAR100
 project: ampere_acc_test
 entity: tejalapeno
 program: train/train.py
@@ -18,3 +18,12 @@ parameters:
     value: .001
   val_ratio:
     value: .2
+<<<<<<< HEAD
+=======
+
+early_terminate:
+  type: hyperband
+  s: 2
+  eta: 3
+  max_iter: 27
+>>>>>>> 3f6396d83b286ba2add4f3b12e9835af50e22ad9
